@@ -233,3 +233,103 @@ namespace EDA {
 
 #endif 
 sasas
+
+
+
+void LogicEngine::VerifyColision() {
+  //crear un instancia momentanea futura para analizar colisiones y luego decidir
+  bool flag_aircraftCollide_0 = false;
+  bool flag_aircraftCollide_1 = false;
+  bool flag_aircraftCollide_2 = false;
+  bool flag_aircraftCollide_3 = false;
+  bool flag_aircraftCollide_4 = false;
+
+  //std::vector<bool> flags_aicraft_colliders;
+
+  for(list<PlayerRepresentation>::iterator it = aircrafts_.begin(); it != aircrafts_.end(); it++){
+   flag_aircraftCollide_0 = *it->box_collider.intersects(aircrafts_[0].box_collider);
+  }
+  for(list<PlayerRepresentation>::iterator it = aircrafts_.begin(); it != aircrafts_.end(); it++){
+    flag_aircraftCollide_1 = *it->box_collider.intersects(aircrafts_[1].box_collider);
+  }
+  for(list<PlayerRepresentation>::iterator it = aircrafts_.begin(); it != aircrafts_.end(); it++){
+    flag_aircraftCollide_2 = *it->box_collider.intersects(aircrafts_[2].box_collider);
+  }
+  for(list<PlayerRepresentation>::iterator it = aircrafts_.begin(); it != aircrafts_.end(); it++){
+    flag_aircraftCollide_3 = *it->box_collider.intersects(aircrafts_[3].box_collider);
+  }
+  for(list<PlayerRepresentation>::iterator it = aircrafts_.begin(); it != aircrafts_.end(); it++){
+    flag_aircraftCollide_4 = *it->box_collider.intersects(aircrafts_[4].box_collider);
+  }
+
+  bool flag_bulletCollide_0 = false;
+  bool flag_bulletCollide_1 = false;
+  bool flag_bulletCollide_2 = false;
+  bool flag_bulletCollide_3 = false;
+  bool flag_bulletCollide_4 = false;
+
+  for(list<PlayerRepresentation>::iterator it = bullets_.begin(); it != bullets_.end(); it++){
+   flag_bulletCollide_0 = *it->box_collider.intersects(bullets_[0].box_collider);
+  }
+  for(list<PlayerRepresentation>::iterator it = bullets_.begin(); it != bullets_.end(); it++){
+    flag_bulletCollide_1 = *it->box_collider.intersects(bullets_[1].box_collider);
+  }
+  for(list<PlayerRepresentation>::iterator it = bullets_.begin(); it != bullets_.end(); it++){
+    flag_bulletCollide_2 = *it->box_collider.intersects(bullets_[2].box_collider);
+  }
+  for(list<PlayerRepresentation>::iterator it = bullets_.begin(); it != bullets_.end(); it++){
+    flag_bulletCollide_3 = *it->box_collider.intersects(bullets_[3].box_collider);
+  }
+  for(list<PlayerRepresentation>::iterator it = bullets_.begin(); it != bullets_.end(); it++){
+    flag_bulletCollide_4 = *it->box_collider.intersects(bullets_[4].box_collider);
+  }
+  
+}void LogicEngine::VerifyColision() {
+  //crear un instancia momentanea futura para analizar colisiones y luego decidir
+  bool flag_aircraftCollide_0 = false;
+  bool flag_aircraftCollide_1 = false;
+  bool flag_aircraftCollide_2 = false;
+  bool flag_aircraftCollide_3 = false;
+  bool flag_aircraftCollide_4 = false;
+
+  //std::vector<bool> flags_aicraft_colliders;
+
+  for(list<PlayerRepresentation>::iterator it = aircrafts_.begin(); it != aircrafts_.end(); it++){
+   flag_aircraftCollide_0 = *it->box_collider.intersects(aircrafts_[0].box_collider);
+  }
+  for(list<PlayerRepresentation>::iterator it = aircrafts_.begin(); it != aircrafts_.end(); it++){
+    flag_aircraftCollide_1 = *it->box_collider.intersects(aircrafts_[1].box_collider);
+  }
+  for(list<PlayerRepresentation>::iterator it = aircrafts_.begin(); it != aircrafts_.end(); it++){
+    flag_aircraftCollide_2 = *it->box_collider.intersects(aircrafts_[2].box_collider);
+  }
+  for(list<PlayerRepresentation>::iterator it = aircrafts_.begin(); it != aircrafts_.end(); it++){
+    flag_aircraftCollide_3 = *it->box_collider.intersects(aircrafts_[3].box_collider);
+  }
+  for(list<PlayerRepresentation>::iterator it = aircrafts_.begin(); it != aircrafts_.end(); it++){
+    flag_aircraftCollide_4 = *it->box_collider.intersects(aircrafts_[4].box_collider);
+  }
+
+  bool flag_bulletCollide_0 = false;
+  bool flag_bulletCollide_1 = false;
+  bool flag_bulletCollide_2 = false;
+  bool flag_bulletCollide_3 = false;
+  bool flag_bulletCollide_4 = false;
+
+  for(list<PlayerRepresentation>::iterator it = bullets_.begin(); it != bullets_.end(); it++){
+   flag_bulletCollide_0 = *it->box_collider.intersects(bullets_[0].box_collider);
+  }
+  for(list<PlayerRepresentation>::iterator it = bullets_.begin(); it != bullets_.end(); it++){
+    flag_bulletCollide_1 = *it->box_collider.intersects(bullets_[1].box_collider);
+  }
+  for(list<PlayerRepresentation>::iterator it = bullets_.begin(); it != bullets_.end(); it++){
+    flag_bulletCollide_2 = *it->box_collider.intersects(bullets_[2].box_collider);
+  }
+  for(list<PlayerRepresentation>::iterator it = bullets_.begin(); it != bullets_.end(); it++){
+    flag_bulletCollide_3 = *it->box_collider.intersects(bullets_[3].box_collider);
+  }
+  for(list<PlayerRepresentation>::iterator it = bullets_.begin(); it != bullets_.end(); it++){
+    flag_bulletCollide_4 = *it->box_collider.intersects(bullets_[4].box_collider);
+  }
+  
+}
