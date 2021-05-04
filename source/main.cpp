@@ -33,6 +33,14 @@ class TreeSearcher {
   unsigned int id_;
   EDA::Concurrent::BLinkTree<3, int> *b_link_;
 };
+lasada
+sdas
+das
+das
+das
+das
+d
+
 
 void sequential_insert(EDA::Concurrent::BLinkTree<3, int> *b_link) {
   std::uniform_int_distribution<int> distribution(MIN_VALUE, MAX_VALUE);
